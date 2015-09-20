@@ -7,6 +7,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1428,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "e2e-tests/protractor.conf.js",
+			"settings":
+			{
+				"buffer_size": 257,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -15,28 +31,72 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 260.0,
-		"last_filter": "git cu",
+		"height": 375.0,
+		"last_filter": "glue",
 		"selected_items":
 		[
 			[
-				"git cu",
-				"Git: Custom Command"
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"git p",
+				"Git: Push Current Branch"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"g",
+				"Git: Commit"
+			],
+			[
+				"q",
+				"Git: Quick Commit"
+			],
+			[
+				"git ",
+				"Git: Commit"
 			],
 			[
 				"git s",
 				"Git: Status"
 			],
 			[
-				"git add",
-				"Git: Add..."
+				"git",
+				"Git: Commit"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git cu",
+				"Git: Custom Command"
 			],
 			[
 				"glue ",
-				"Glue - Launch"
-			],
-			[
-				"glue",
 				"Glue - Launch"
 			],
 			[
@@ -50,10 +110,6 @@
 			[
 				"push",
 				"Git: Push"
-			],
-			[
-				"git qui",
-				"Git: Quick Commit"
 			],
 			[
 				"git push",
@@ -76,10 +132,6 @@
 				"Git: Commit"
 			],
 			[
-				"git",
-				"Git: Commit"
-			],
-			[
 				"git statu",
 				"Git: Status"
 			],
@@ -92,19 +144,11 @@
 				"Git: Push"
 			],
 			[
-				"git status",
-				"Git: Status"
-			],
-			[
 				"qui",
 				"Git: Quick Commit"
-			],
-			[
-				"g",
-				"Git: Commit"
 			]
 		],
-		"width": 386.0
+		"width": 402.0
 	},
 	"console":
 	{
@@ -130,16 +174,18 @@
 	[
 		"/D/Projects/GitHub/lab-protocols",
 		"/D/Projects/GitHub/lab-protocols/app",
-		"/D/Projects/GitHub/lab-protocols/app/view1"
+		"/D/Projects/GitHub/lab-protocols/app/components/version",
+		"/D/Projects/GitHub/lab-protocols/app/view1",
+		"/D/Projects/GitHub/lab-protocols/e2e-tests"
 	],
 	"file_history":
 	[
+		"/D/Projects/GitHub/lab-protocols/.gitignore",
 		"/D/Projects/GitHub/lab-protocols/app/view1/view1_test.js",
 		"/D/Projects/GitHub/lab-protocols/terminal.glue",
 		"/C/Users/Edu/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/D/Projects/GitHub/lab-protocols/e2e-tests/protractor.conf.js",
 		"/D/Projects/GitHub/lab-protocols/bower.json",
-		"/D/Projects/GitHub/lab-protocols/.gitignore",
 		"/D/Projects/GitHub/lab-protocols/README.md",
 		"/C/Users/Edu/Documents/GitHub/lab-protocols/README.md",
 		"/D/mojotest/edu-maven-plugin/src/main/java/edu/mojos/App.java",
@@ -181,8 +227,69 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "e2e-tests/protractor.conf.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -223,7 +330,7 @@
 	},
 	"output.git":
 	{
-		"height": 420.0
+		"height": 207.0
 	},
 	"pinned_build_system": "",
 	"project": "lab-protocols.sublime-project",
@@ -243,21 +350,25 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"D:\\Projects\\GitHub\\lab-protocols\\lab-protocols.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
-		"height": 35.0,
+		"height": 375.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 392.0
+		"width": 658.0
 	},
 	"selected_group": 0,
 	"settings":

@@ -1,9 +1,8 @@
 {
-  "name": "angular-seed",
-  "description": "A starter project for AngularJS",
-  "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
-  "license": "MIT",
+  "name": "lab-protocols",
+  "description": "Lab Protocols web application (MEAN)",
+  "version": "0.1.0",
+  "homepage": "https://github.com/eduardomhg/lab-protocols",
   "private": true,
   "dependencies": {
     "angular": "~1.4.0",
