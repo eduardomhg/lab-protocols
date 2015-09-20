@@ -15,10 +15,74 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "git co",
+		"height": 260.0,
+		"last_filter": "git cu",
 		"selected_items":
 		[
+			[
+				"git cu",
+				"Git: Custom Command"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"glue ",
+				"Glue - Launch"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git qu",
+				"Git: Quick Commit"
+			],
+			[
+				"soda",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"gits",
+				"Git: Status"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
 			[
 				"git co",
 				"Git: Commit"
@@ -28,39 +92,19 @@
 				"Git: Push"
 			],
 			[
-				"git qui",
-				"Git: Quick Commit"
-			],
-			[
-				"git add",
-				"Git: Add Current File"
-			],
-			[
-				"git",
-				"Git: Commit"
-			],
-			[
 				"git status",
 				"Git: Status"
-			],
-			[
-				"git push",
-				"Git: Push"
 			],
 			[
 				"qui",
 				"Git: Quick Commit"
 			],
 			[
-				"push",
-				"Git: Push"
-			],
-			[
 				"g",
 				"Git: Commit"
 			]
 		],
-		"width": 512.0
+		"width": 386.0
 	},
 	"console":
 	{
@@ -84,10 +128,18 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Projects/GitHub/lab-protocols"
+		"/D/Projects/GitHub/lab-protocols",
+		"/D/Projects/GitHub/lab-protocols/app",
+		"/D/Projects/GitHub/lab-protocols/app/view1"
 	],
 	"file_history":
 	[
+		"/D/Projects/GitHub/lab-protocols/app/view1/view1_test.js",
+		"/D/Projects/GitHub/lab-protocols/terminal.glue",
+		"/C/Users/Edu/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/Projects/GitHub/lab-protocols/e2e-tests/protractor.conf.js",
+		"/D/Projects/GitHub/lab-protocols/bower.json",
+		"/D/Projects/GitHub/lab-protocols/.gitignore",
 		"/D/Projects/GitHub/lab-protocols/README.md",
 		"/C/Users/Edu/Documents/GitHub/lab-protocols/README.md",
 		"/D/mojotest/edu-maven-plugin/src/main/java/edu/mojos/App.java",
@@ -102,7 +154,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 96.0,
 		"where_history":
 		[
 		]
@@ -171,7 +223,7 @@
 	},
 	"output.git":
 	{
-		"height": 124.0
+		"height": 420.0
 	},
 	"pinned_build_system": "",
 	"project": "lab-protocols.sublime-project",
@@ -200,7 +252,7 @@
 	},
 	"select_symbol":
 	{
-		"height": 127.0,
+		"height": 35.0,
 		"last_filter": "",
 		"selected_items":
 		[
