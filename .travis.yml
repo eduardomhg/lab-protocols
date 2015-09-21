@@ -1,11 +1,19 @@
 language: node_js
+
 node_js:
   - "0.10"
 
 services:
-  - mongodb
+  - mongodb # Start MongoDB in TravisCI before building
+
+before_install: 
+  - npm install -g grunt-cli
+
+install:
+  - npm install
 
 before_script:
+  - grunt jshint
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
   - npm start > /dev/null &

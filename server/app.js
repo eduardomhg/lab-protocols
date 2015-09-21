@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
     return res.redirect('/index.html');
 });
 
-console.log('Connecting to database at %s...', 'mongodb://localhost/test')
+console.log('Connecting to database at %s...', 'mongodb://localhost/test');
 mongoose.connect('mongodb://localhost/test', function (err) {
     if (err) {
         console.log('Connection error: %s', err);
