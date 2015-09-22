@@ -4,10 +4,20 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 	jshint: {
-	  all: ['Gruntfile.js', 'server/*.js', 'app/*.js'],
+	  all: ['Gruntfile.js', 'server/*.js', 'app/*/*.js', 'app/components/version/*.js'],
 	  options: {
 	    globals: {
-	      "angular": false
+	      "angular": false,
+	      "$scope": false,
+
+	      "it": false,
+	      "describe": false,
+	      "beforeEach": false,
+	      "expect": false,
+	      'module': false,
+	      'inject': false,
+
+	      'alert': false
 	    }
 	  }
 	}
