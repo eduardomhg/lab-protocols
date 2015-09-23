@@ -11,7 +11,10 @@
 	  });
 	}])
 
-	.controller('View1Ctrl', [function() {
+	.controller('View1Ctrl', ['$scope', function($scope) {
+		$scope.handleButtonClick = function() {
+			alert('Clicked!');
+		};
 	}]);
 
 })();

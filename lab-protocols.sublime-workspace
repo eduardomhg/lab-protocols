@@ -3,26 +3,14 @@
 	{
 		"selected_items":
 		[
+			[
+				"scope",
+				"$scope	AngularJS"
+			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 1428,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "e2e-tests/protractor.conf.js",
-			"settings":
-			{
-				"buffer_size": 257,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -32,9 +20,65 @@
 	"command_palette":
 	{
 		"height": 375.0,
-		"last_filter": "glue",
+		"last_filter": "pus",
 		"selected_items":
 		[
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git: qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
 			[
 				"glue",
 				"Glue - Launch"
@@ -48,24 +92,8 @@
 				"Git: Status"
 			],
 			[
-				"git qui",
-				"Git: Quick Commit"
-			],
-			[
-				"git add",
-				"Git: Add Current File"
-			],
-			[
-				"git status",
-				"Git: Status"
-			],
-			[
 				"commit",
 				"Git: Commit"
-			],
-			[
-				"add",
-				"Git: Add..."
 			],
 			[
 				"g",
@@ -78,10 +106,6 @@
 			[
 				"git ",
 				"Git: Commit"
-			],
-			[
-				"git s",
-				"Git: Status"
 			],
 			[
 				"git",
@@ -108,14 +132,6 @@
 				"Git: Status"
 			],
 			[
-				"push",
-				"Git: Push"
-			],
-			[
-				"git push",
-				"Git: Push"
-			],
-			[
 				"git qu",
 				"Git: Quick Commit"
 			],
@@ -136,19 +152,11 @@
 				"Git: Status"
 			],
 			[
-				"git co",
-				"Git: Commit"
-			],
-			[
-				"pus",
-				"Git: Push"
-			],
-			[
 				"qui",
 				"Git: Quick Commit"
 			]
 		],
-		"width": 402.0
+		"width": 458.0
 	},
 	"console":
 	{
@@ -174,18 +182,38 @@
 	[
 		"/D/Projects/GitHub/lab-protocols",
 		"/D/Projects/GitHub/lab-protocols/app",
+		"/D/Projects/GitHub/lab-protocols/app/components",
 		"/D/Projects/GitHub/lab-protocols/app/components/version",
 		"/D/Projects/GitHub/lab-protocols/app/view1",
-		"/D/Projects/GitHub/lab-protocols/e2e-tests"
+		"/D/Projects/GitHub/lab-protocols/app/view2",
+		"/D/Projects/GitHub/lab-protocols/e2e-tests",
+		"/D/Projects/GitHub/lab-protocols/server"
 	],
 	"file_history":
 	[
-		"/D/Projects/GitHub/lab-protocols/.gitignore",
+		"/D/Projects/GitHub/lab-protocols/app/components/version/version_test.js",
+		"/D/Projects/GitHub/lab-protocols/app/components/version/version.js",
+		"/D/Projects/GitHub/lab-protocols/app/components/version/version-directive_test.js",
+		"/D/Projects/GitHub/lab-protocols/app/components/version/version-directive.js",
+		"/D/Projects/GitHub/lab-protocols/app/components/version/interpolate-filter_test.js",
+		"/D/Projects/GitHub/lab-protocols/app/components/version/interpolate-filter.js",
+		"/D/Projects/GitHub/lab-protocols/app/view2/view2_test.js",
+		"/D/Projects/GitHub/lab-protocols/app/view2/view2.js",
 		"/D/Projects/GitHub/lab-protocols/app/view1/view1_test.js",
+		"/D/Projects/GitHub/lab-protocols/app/view1/view1.html",
+		"/D/Projects/GitHub/lab-protocols/app/view1/view1.js",
+		"/D/Projects/GitHub/lab-protocols/app/index.html",
+		"/D/Projects/GitHub/lab-protocols/npm.sublime-build",
+		"/D/Projects/GitHub/lab-protocols/Gruntfile.js",
+		"/D/Projects/GitHub/lab-protocols/app/app.js",
+		"/D/Projects/GitHub/lab-protocols/.travis.yml",
+		"/D/Projects/GitHub/lab-protocols/package.json",
+		"/D/Projects/GitHub/lab-protocols/bower.json",
+		"/D/Projects/GitHub/lab-protocols/e2e-tests/protractor.conf.js",
+		"/D/Projects/GitHub/lab-protocols/server/app.js",
+		"/D/Projects/GitHub/lab-protocols/.gitignore",
 		"/D/Projects/GitHub/lab-protocols/terminal.glue",
 		"/C/Users/Edu/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/D/Projects/GitHub/lab-protocols/e2e-tests/protractor.conf.js",
-		"/D/Projects/GitHub/lab-protocols/bower.json",
 		"/D/Projects/GitHub/lab-protocols/README.md",
 		"/C/Users/Edu/Documents/GitHub/lab-protocols/README.md",
 		"/D/mojotest/edu-maven-plugin/src/main/java/edu/mojos/App.java",
@@ -227,69 +255,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1428,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								25,
-								25
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "e2e-tests/protractor.conf.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 257,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								194,
-								194
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

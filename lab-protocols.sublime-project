@@ -2,6 +2,20 @@
 	"folders":
 	[
 		{
+			"file_exclude_patterns":
+			[
+				"logs/*",
+				"!.gitkeep",
+				"bower_components/",
+				"tmp",
+				".DS_Store",
+				".idea",
+				"*.sublime-workspace"
+			],
+			"folder_exclude_patterns":
+			[
+				"node_modules/"
+			],
 			"path": "."
 		}
 	]

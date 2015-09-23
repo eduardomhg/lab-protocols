@@ -4,26 +4,34 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 	jshint: {
-	  all: ['Gruntfile.js', 'server/*.js', 'app/*/*.js', 'app/components/version/*.js'],
+	  all: ['Gruntfile.js', 'server/*.js', 'app/*/*.js', 'app/components/version/*.js', 'e2e-tests/**/*.js'],
 	  options: {
 	    globals: {
-	      "angular": false,
-	      "$scope": false,
+	      // Angular
+	      'angular': false,
+	      '$scope': false,
 
-	      "it": false,
-	      "describe": false,
-	      "beforeEach": false,
-	      "expect": false,
+	      // Jasmine
+	      'it': false,
+	      'describe': false,
+	      'beforeEach': false,
+	      'expect': false,
 	      'module': false,
 	      'inject': false,
 
+	      // Protractor,
+	      'browser': false,
+	      'element': false,
+	      'by': false,	      
+
+	      // JavaScript
 	      'alert': false
 	    }
 	  }
 	}
   });
 
-  // Load the plugin that provides the "jshint" task.
+  // Load the plugin that provides the 'jshint' task.
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task(s).
