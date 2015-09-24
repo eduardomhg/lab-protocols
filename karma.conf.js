@@ -11,23 +11,36 @@ module.exports = function(config){
       'app/view*/**/*.js'
     ],
 
-    autoWatch : true,
+    //autoWatch : true,
 
     frameworks: ['jasmine'],
 
-    browsers : ['Chrome'],
+    browsers : ['PhantomJS'],
+
+    singleRun: true,
 
     plugins : [
             'karma-chrome-launcher',
             'karma-firefox-launcher',
+            'karma-phantomjs-launcher',
             'karma-jasmine',
-            'karma-junit-reporter'
+            'karma-junit-reporter',
+            'karma-coverage',
+            'karma-coveralls'
             ],
 
     junitReporter : {
       outputFile: 'test_out/unit.xml',
       suite: 'unit'
-    }
+    },
+
+    coverageReporter: {
+      type: 'lcov', // lcov or lcovonly are required for generating lcov.info files
+      dir: 'coverage/'
+    },
+
+    reporters: ['progress', 'coverage', 'coveralls'],
+    preprocessors: { '*.js': ['coverage'] }
 
   });
 };
