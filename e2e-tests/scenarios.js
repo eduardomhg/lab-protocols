@@ -30,8 +30,16 @@
         browser.waitForAngular();
 
         var alertDialog = browser.switchTo().alert();
-        expect(alertDialog.getText()).toEqual('Clicked!');
-        alertDialog.accept();
+
+        browser.switchTo().alert().then(
+            function (alert) {
+              expect(alertDialog.getText()).toEqual('Clicked!');
+              alert.accept();
+            },
+            function (error) {
+            }
+          );
+
       });
 
     });
