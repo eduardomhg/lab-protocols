@@ -2,16 +2,30 @@
 
 	'use strict';
 
-	describe('myApp.view1 module', function() {
+	describe('myApp.view1 module', function() {	
+
+		var $scope;
+
+		//you need to inject dependencies first
+		beforeEach(function() { $scope = {}; });
 
 	  beforeEach(module('myApp.view1'));
+
 
 	  describe('view1 controller', function(){
 
 	    it('should ....', inject(function($controller) {
 	      //spec body
-	      var view1Ctrl = $controller('View1Ctrl');
+	      var view1Ctrl = $controller('View1Ctrl', {$scope: $scope});
 	      expect(view1Ctrl).toBeDefined();
+	      expect($scope.handleButtonClick).toBeDefined();
+
+	      spyOn(window, 'alert');
+
+	      $scope.handleButtonClick();
+
+	      expect(window.alert).toHaveBeenCalledWith('Clicked!');
+
 	    }));
 
 	  });

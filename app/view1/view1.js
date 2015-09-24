@@ -13,7 +13,7 @@
 
 	.controller('View1Ctrl', ['$scope', function($scope) {
 		$scope.handleButtonClick = function() {
-			alert('Clicked!');
+			window.alert('Clicked!');
 		};
 	}]);
 
