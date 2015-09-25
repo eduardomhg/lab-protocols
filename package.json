@@ -4,12 +4,14 @@
   "version": "0.1.0",
   "description": "Lab Protocols web application (MEAN)",
   "repository": "https://github.com/eduardomhg/lab-protocols",
-  "devDependencies": {
+  "dependencies": {
     "bower": "^1.5.3",
     "express": "^4.13.3",
+    "mongoose": "^4.1.8"
+  },
+  "devDependencies": {
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-karma-coveralls": "^2.5.4",
-    "http-server": "^0.8.4",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.10",
     "karma-chrome-launcher": "^0.2.0",
@@ -20,7 +22,6 @@
     "karma-junit-reporter": "^0.3.4",
     "karma-phantomjs-launcher": "^0.2.1",
     "grunt": "^0.4.5",
-    "mongoose": "^4.1.8",
     "phantomjs": "^1.9.18",
     "protractor": "^2.1.0",
     "shelljs": "^0.5.3"
