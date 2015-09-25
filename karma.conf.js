@@ -15,7 +15,7 @@ module.exports = function(config){
 
     frameworks: ['jasmine'],
 
-    browsers : ['PhantomJS'],
+    browsers : ['Firefox'],
 
     singleRun: true,
 
@@ -40,7 +40,10 @@ module.exports = function(config){
     },
 
     reporters: ['progress', 'coverage', 'coveralls'],
-    preprocessors: { '*.js': ['coverage'] }
+
+    preprocessors: { 
+      'app/view*/**/*.js': ['coverage'] 
+    }
 
   });
 };
