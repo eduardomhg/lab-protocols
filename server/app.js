@@ -17,18 +17,17 @@ app.get('/', function (req, res) {
 console.log('Connecting to database at %s...', 'mongodb://localhost/test');
 mongoose.connect('mongodb://localhost/test', function (err) {
     if (err) {
-        console.log('Connection error: %s', err);
-        process.exit(1);
+        console.log('Error connecting to database: %s', err);
     } else {
         console.log('Connected to database');
-
-        var server = app.listen(8000, function () {
-		    var host = server.address().address;
-		    var port = server.address().port;
-		    
-		    console.log('ExpressJS Server listening at http://%s:%s', host, port);
-		});
     }
+
+    var server = app.listen(80, function () {
+        var host = server.address().address;
+        var port = server.address().port;
+    
+        console.log('ExpressJS Server listening at http://%s:%s', host, port);
+    });
 });
 
 
