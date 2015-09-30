@@ -23,8 +23,6 @@ before_script:
 script:
   - node_modules/.bin/karma start karma.conf.js --no-auto-watch --single-run --reporters=dots,coverage,coveralls --browsers=Firefox
   #- node_modules/.bin/protractor e2e-tests/protractor.conf.js --browser=firefox
-  
-after_script:
   - grunt compress
   
 deploy:
