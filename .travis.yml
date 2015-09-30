@@ -26,3 +26,16 @@ script:
   
 after_script:
   - grunt compress
+  
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: AKIAICYPNLKOBDBJ3JPA
+  secret_access_key: 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
+  region: eu-west-1
+  app: lab-protocols
+  env: labProtocols-env
+  bucket_name: elasticbeanstalk-eu-west-1-502514754647
+  skip_cleanup: true
+  zip_file: production.zip
+  on:
+    branch: master
