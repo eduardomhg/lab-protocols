@@ -1,0 +1,2 @@
+"C:\Users\Edu\Downloads\dpl-1.8.5\dpl-1.8.5\bin\dpl" --provider=elasticbeanstalk --access-key-id=AKIAICYPNLKOBDBJ3JPA --secret-access-key="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" --app="lab-protocols" --env="labProtocols-env" --region="eu-west-1" --zip_file="production2.zip" --skip_cleanup --bucket_name="elasticbeanstalk-eu-west-1-502514754647" --bucket_path="/"
+pause

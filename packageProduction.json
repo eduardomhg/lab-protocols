@@ -1,0 +1,15 @@
+{
+  "name": "lab-protocols",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Lab Protocols web application (MEAN)",
+  "repository": "https://github.com/eduardomhg/lab-protocols",
+  "dependencies": {
+    "bower": "^1.5.3",
+    "express": "^4.13.3",
+    "mongoose": "^4.1.8"
+  },
+  "scripts": {
+    "start": "node server/app.js -o -c-1"
+  }
+}
