@@ -28,7 +28,7 @@ script:
 deploy:
   provider: elasticbeanstalk
   access_key_id: AKIAICYPNLKOBDBJ3JPA
-  secret_access_key: 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
+  secret_access_key: XXXX
   region: eu-west-1
   app: lab-protocols
   env: labProtocols-env
