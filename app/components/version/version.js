@@ -1,12 +1,12 @@
 (function() {
 
-	'use strict';
+  'use strict';
 
-	angular.module('myApp.version', [
-	  'myApp.version.interpolate-filter',
-	  'myApp.version.version-directive'
-	])
+  angular.module('myApp.version', [
+    'myApp.version.interpolate-filter',
+    'myApp.version.version-directive'
+  ])
 
-	.value('version', '0.2');
+  .value('version', '0.1.0');
 
 })();

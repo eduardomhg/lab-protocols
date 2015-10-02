@@ -9,3 +9,4 @@ tmp
 *.sublime-workspace
 *.cache
 *.log
+production.zip

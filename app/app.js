@@ -3,7 +3,7 @@
 	'use strict';
 
 	// Declare app level module which depends on views, and components
-	angular.module('myApp', [
+	angular.module('labProtocolsApp', [
 	  'ngRoute',
 	  'myApp.view1',
 	  'myApp.view2',

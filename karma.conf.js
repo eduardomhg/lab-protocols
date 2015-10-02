@@ -11,13 +11,13 @@ module.exports = function(config){
       'app/view*/**/*.js'
     ],
 
-    //autoWatch : true,
+    autoWatch : true,
 
     frameworks: ['jasmine'],
 
     browsers : ['Firefox'],
 
-    singleRun: true,
+    singleRun: false,
 
     plugins : [
             'karma-chrome-launcher',
@@ -39,7 +39,7 @@ module.exports = function(config){
       dir: 'coverage/'
     },
 
-    reporters: ['progress', 'coverage', 'coveralls'],
+    reporters: ['progress'],
 
     preprocessors: { 
       'app/view*/**/*.js': ['coverage'] 
