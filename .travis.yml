@@ -35,6 +35,6 @@ deploy:
   env: labProtocols-env
   bucket_name: elasticbeanstalk-eu-west-1-502514754647
   skip_cleanup: true
-  zip_file: production.zip
+  zip_file: production.zip 
   on:
     branch: master
