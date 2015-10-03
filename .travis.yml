@@ -27,8 +27,9 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: AKIAIPSF2BGQDMLQL23Q
-  secret_access_key: KJtQLaiXYSasfdasfae7+dhr+4FNnq8OrW86
+  access_key_id: AKIAJTV3L24YPJU2JNEQ
+  secret_access_key:
+    secure: "XvUM/IplTAFZs0QyWUiTwA8oRuQ5jOXiqP4bKCsfAMNMuTvEN5227BVtie60PHk2Q/vxSLJxll/cgqH973vbQeCJyJ7LU9Ntrkr9BUFQoYAIZ/oXo9T6W3b1Bs/C36WMxqKawICsECXV271amgoBiVNbzJryw6L/nieEjmh2k+Drltp3/q5jzB/B5/FK3xPjiz/YQh1gJOHlLtKTt3PMynvR6pjCrevOId+Pu/1sVJy69ssE/zAlSFgwPFoHveDX2R01Ei82YfHy7xPost8pVIzNiQsbrLo/6/lbDbrKNyNyjU/lYVI8HbhmtH51Iu7WdLkEfnRmwXhdq1X3SGjs9kiSJzqv8hhwC2QUvmxwb8TwyIWigvXMD4b/wofyxrIxoQ8YJpmo6a7ogZ1KfdrFsRGvv3ju9TgwgTJ3mn1OwhDMnQS9Qm7I3m67TX2BaHQm4UTQAKHB/pC+2DlMkuDdlMlZgAzpfYsYnJjOfEQGYc84Sqg7WUbeU3yXoTVoTDqK6CEMLmSL/8X6vBJAOn3xMKZ6wdcqIsh9brzTFNLCcjRpNheoWrB3+F4VEyGPhRkMcQ/PYdJ8CviPO0EA9mtBk5vUC16r3ZJcBl8TK/ghKJHYKpdzx6uMahfP7yeBT9Zra0CGvbfYrHwhk/FRbgXwOG7CmOImV36s+rQ/57CxPpE="
   region: eu-west-1
   app: lab-protocols
   env: labProtocols-env
