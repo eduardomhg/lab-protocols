@@ -7,7 +7,11 @@ var mongoose = require('mongoose');
 
 var app = express();
 
-app.use(express.static('app'));
+
+var protocols = require('./routes/protocols');
+app.use('/protocols', protocols);
+
+app.use(express.static('client'));
 
 app.get('/', function (req, res) {
     console.log('route / requested');
