@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         files: [ 
           // includes files within path and its sub-directories 
           {expand: true, src: ['client/**', '!client/bower_components/**', '!client/**/*_test.js'], dest: '/'},
-          {expand: true, src: ['server/**', '.ebextensions/**', '.bowerrc', 'bower.json'], dest: '/'},
+          {expand: true, src: ['server/**', 'common/**', '.ebextensions/**', '.bowerrc', 'bower.json'], dest: '/'},
           {expand: true, src: ['packageProduction.json'], dest: '/', 
             rename: function(dest, src) {
               return dest + 'package.json';
