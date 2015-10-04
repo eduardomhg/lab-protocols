@@ -14,8 +14,8 @@ app.get('/', function (req, res) {
     return res.redirect('/index.html');
 });
 
-console.log('Connecting to database at %s...', 'mongodb://ec2-52-17-137-181.eu-west-1.compute.amazonaws.com/test');
-mongoose.connect('mongodb://ec2-52-17-137-181.eu-west-1.compute.amazonaws.com/test', function (err) {
+console.log('Connecting to database at %s...', 'mongodb://localhost/test');
+mongoose.connect('mongodb://localhost/test', function (err) {
     if (err) {
         console.log('Error connecting to database: %s', err);
     } else {
