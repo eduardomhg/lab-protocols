@@ -89,6 +89,30 @@
       </div>
     </div>    
 
+    <div class="row">
+      <div class="col-sm-4" ng-controller="ProtocolController">
+
+        <div id="mdtest"></div>
+
+        <h1>Available Protocols:</h1>
+        <ul>
+          <li ng-repeat="protocol in protocols">
+            {{ protocol.title }}
+            <button ng-click="delete(protocol._id)">Delete</button>
+          </li>
+        </ul>
+        <button ng-click="deleteAll()">Delete All</button>
+        <h1>Insert new protocol:</h1>
+        <input type="text" ng-model="newTitle"> <button class="btn-primary" ng-click="save()">Insert</button>
+        
+        <form>
+          <input name="title" type="text" placeholder="Title?" />
+          <textarea name="content" data-provide="markdown" rows="10" ng-model="markdownText" ng-change="updatePreview()"></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      
+      </div>
+
   </div>
 
 
