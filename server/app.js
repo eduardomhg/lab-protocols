@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 });
 
 console.log('Connecting to database at %s...', 'mongodb://localhost/test');
-mongoose.connect('mongodb://52.17.137.181/test', function (err) {
+mongoose.connect('mongodb://172.31.16.253/test', function (err) {
     if (err) {
         console.log('Error connecting to database: %s', err);
     } else {
