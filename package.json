@@ -1,7 +1,7 @@
 {
   "name": "lab-protocols",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lab Protocols web application (MEAN)",
   "repository": "https://github.com/eduardomhg/lab-protocols",
   "dependencies": {
