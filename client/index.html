@@ -42,7 +42,10 @@
     <nav class="navbar navbar-inverse">
       <div>
         <ul class="nav navbar-nav navbar-left">
-          <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          <li class="active"><a href="#/view1"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#/view2"><span class="glyphicon glyphicon-pencil"></span> Edit Protocols</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-left">
           <li><a href="#loginModal" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -89,43 +92,7 @@
       </div>
     </div>    
 
-    <div class="row">
-      <div class="col-sm-4" ng-controller="ProtocolController">
-
-        <div id="mdtest"></div>
-
-        <h1>Available Protocols:</h1>
-        <ul>
-          <li ng-repeat="protocol in protocols">
-            {{ protocol.title }}
-            <button ng-click="delete(protocol._id)">Delete</button>
-          </li>
-        </ul>
-        <button ng-click="deleteAll()">Delete All</button>
-        <h1>Insert new protocol:</h1>
-        <input type="text" ng-model="newTitle"> <button class="btn-primary" ng-click="save()">Insert</button>
-        
-        <form>
-          <input name="title" type="text" placeholder="Title?" />
-          <textarea name="content" data-provide="markdown" rows="10" ng-model="markdownText" ng-change="updatePreview()"></textarea>
-          <button type="submit" class="btn">Submit</button>
-        </form>
-      
-      </div>
-
-  </div>
-
-
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
-
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
-  <div ng-view></div>
+    <div ng-view></div>
 
   <div>Lab Protocols: v<span app-version></span></div>
 
@@ -134,9 +101,13 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+
   <script src="app.js"></script>
+
+  <script src="services/protocolDatabase.js"></script>
+
   <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
+  <script src="view2/view2.js"></script> 
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
