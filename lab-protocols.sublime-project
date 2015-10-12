@@ -10,7 +10,11 @@
 				"tmp",
 				".DS_Store",
 				".idea",
-				"*.sublime-workspace"
+				"*.sublime-workspace",
+				"coverage/",
+				"*.cache",
+				"*.log",
+				"production.zip"
 			],
 			"folder_exclude_patterns":
 			[

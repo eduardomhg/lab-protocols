@@ -11,7 +11,7 @@
 	  });
 	}])
 
-	.controller('ProtocolController', ['$scope', '$http', 'protocolDatabase', function($scope, $http, protocolDatabase) {
+	.controller('ProtocolController', ['$scope', 'protocolDatabase', function($scope, protocolDatabase) {
 
     // Handles any error in server connection.
     $scope.handleError = function(errorMessage) {
@@ -28,11 +28,6 @@
           console.log('protocols: ', data);
 
           $scope.protocols = data;
-
-          $scope.updatePreview = function() {
-            document.getElementById('mdtest').innerHTML = markdown.toHTML($scope.markdownText);
-          };
-
         }).
         error($scope.handleError.bind('Error reading protocols'));
 		};
@@ -46,11 +41,11 @@
       // Validate fields (TODO add validation in html)
     	if (!newProtocol.title || newProtocol.title.length < 1) return;
 
-    	protocolDatabase.addProtocol({ title: newProtocol.title }).
+    	protocolDatabase.addProtocol(newProtocol).
         success(function (data, status, headers, config) {
           // this callback will be called asynchronously
           // when the response is available.
-          console.log('Success creating new protocol: ', newProtocol.title);
+          console.log('Success creating new protocol: ', newProtocol);
 
           $scope.newProtocol = {}; // clear textbox
 
@@ -85,9 +80,20 @@
         error($scope.handleError.bind('Error deleting all protocols'));
     };
 
+    $scope.updatePreview = function() {
+
+    	console.log('hola');
+      document.getElementById('mdtest').innerHTML = markdown.toHTML($scope.newProtocol.content);
+    };
+
+    $scope.loadProtocol = function(protocol) {
+      $scope.newProtocol = protocol;
+      $scope.updatePreview();
+    };
 
     // When the controller is constructed, read all protocols.
     $scope.refreshProtocols();
+    $scope.newProtocol = {};
 	}]);
 
 })();

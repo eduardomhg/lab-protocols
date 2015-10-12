@@ -10,6 +10,11 @@
   factory('protocolDatabase', ['$http', function($http) {
     var protocolDatabaseInstance = {};
     
+    // GET from /protocol/ID get a protocol.
+    protocolDatabaseInstance.getProtocol = function(protocolId) {
+      return $http({ method: 'GET', url: '/protocols/' + protocolId });
+    };
+
     // GET from /protocols all available protocols.
     protocolDatabaseInstance.getAllProtocols = function() {
       return $http({ method: 'GET', url: '/protocols' });

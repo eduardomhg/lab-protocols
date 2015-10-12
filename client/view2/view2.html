@@ -1,13 +1,12 @@
 
 <div class="row">
-  <div class="col-sm-4">
-
-    <div id="mdtest"></div>
+  <div class="col-sm-6">
 
     <h1>Available Protocols:</h1>
     <ul>
       <li ng-repeat="protocol in protocols">
         {{ protocol.title }}
+        <button ng-click="loadProtocol(protocol)">Edit</button>
         <button ng-click="deleteProtocol(protocol._id)">Delete</button>
       </li>
     </ul>
@@ -15,15 +14,21 @@
 
     <form name="form" class="css-form" novalidate>
       <h1>Insert new protocol:</h1>
+      <p>Title:</p>
       <input type="text" ng-model="newProtocol.title" required /> 
-      <button class="btn btn-primary" ng-click="addProtocol(newProtocol)" ng-disabled="form.$invalid">Insert</button>
+
+      <p>Content:</p> 
+      <textarea name="content" data-provide="markdown" rows="10" ng-model="newProtocol.content" ng-change="updatePreview()"></textarea> <br/>
+
+      <button class="submit btn-primary" ng-click="addProtocol(newProtocol)" ng-disabled="form.$invalid">Create</button>
     </form>
-    
-    <form>
-      <input name="title" type="text" placeholder="Title?" />
-      <textarea name="content" data-provide="markdown" rows="10" ng-model="markdownText" ng-change="updatePreview()"></textarea>
-      <button type="submit" class="btn">Submit</button>
-    </form>
+
+  </div>
+
+  <div class="col-sm-6">
+
+    <h1>Protocols Preview:</h1>
+    <div id="mdtest"></div>
 
   </div>
 </div>
